@@ -1,0 +1,10 @@
+spring:
+   datasource:
+      username: amusement_park
+      password: amusement_park
+      url: jdbc:mysql://localhost:3306/amusement_park
+   
+   jpa:
+      hibernate:
+         ddl-auto: update
+      show-sql: true
