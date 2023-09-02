@@ -65,6 +65,8 @@ public class AmusementParkController {
 			@PathVariable Long amusementParkId) {
 		log.info("Deleting amusement park with ID={}", amusementParkId);
 		
+		amusementParkService.deleteAmusementParkById(amusementParkId);
+		
 		return Map.of("message", "Successfully deleted amusement park with ID={}" + amusementParkId);
 	}
 	
